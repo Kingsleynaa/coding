@@ -1,0 +1,389 @@
+.h-sm {
+  height: 80%
+}
+
+.font-sm {
+  font-size: 0.875rem;
+}
+
+.font-xsm {
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.right-divider {
+  border-right: 2px solid darkgray;
+}
+
+.filter {
+  margin-bottom: 1rem
+}
+
+.h-wrap-content {
+  height: min-content
+}
+
+.h-fit-content {
+  height: fit-content
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.no-decoration-on-hover:hover {
+  text-decoration: none;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.milestones-scope {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.milestones-scope:hover {
+  text-decoration: none;
+  border-bottom: 2px solid grey
+}
+
+.milestones-scope.active {
+  text-decoration: none;
+  border-bottom: 2px solid red
+}
+
+.delete-card {
+  border-left: 2px solid red;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #fcf1ef;
+}
+
+.success-card {
+  border-left: 2px solid blue;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #effafc;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.slide-right {
+  animation: 0.35s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left {
+  animation: 0.35s slide-left;
+  margin-left: -100%;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: -100%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 0.35s;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.fixed-navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.fixed-sidebar {
+  z-index: 5;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+}
+
+.horizontal-divider {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+.mobile-backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.input-validation-error {
+  border: 1px solid red;
+}
+
+.tagify {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Suggestions items */
+.tagify__dropdown.users-list {
+  font-size: 0.875rem;
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item {
+  padding: 0.5em 0.7em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 1em;
+  grid-template-areas: "avatar name""avatar email";
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item:hover .tagify__dropdown__item__avatar-wrap {
+  transform: scale(1.2);
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item__avatar-wrap {
+  grid-area: avatar;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #EEE;
+  transition: 0.1s ease-out;
+}
+
+.tagify__dropdown.users-list img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.tagify__dropdown.users-list strong {
+  grid-area: name;
+  width: 100%;
+  align-self: center;
+  font-weight: 500;
+}
+
+.tagify__dropdown.users-list span {
+  grid-area: email;
+  width: 100%;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item__addAll {
+  border-bottom: 1px solid #DDD;
+  gap: 0;
+}
+
+/* Tags items */
+.tagify__tag {
+  white-space: nowrap;
+}
+
+.tagify__tag:hover .tagify__tag__avatar-wrap {
+  transform: scale(1.6) translateX(-10%);
+}
+
+.tagify__tag .tagify__tag__avatar-wrap {
+  width: 16px;
+  height: 16px;
+  white-space: normal;
+  background: silver;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: 0.12s ease-out;
+}
+
+.tagify__tag img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.tagify {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Suggestions items */
+.tagify__dropdown.users-list,
+.tagify__tag-text {
+  font-size: 0.875rem;
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item {
+  padding: 0.5em 0.7em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 1em;
+  grid-template-areas: "avatar name""avatar email";
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item:hover .tagify__dropdown__item__avatar-wrap {
+  transform: scale(1.2);
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item__avatar-wrap {
+  grid-area: avatar;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #EEE;
+  transition: 0.1s ease-out;
+}
+
+.tagify__dropdown.users-list img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.tagify__dropdown.users-list strong {
+  grid-area: name;
+  width: 100%;
+  align-self: center;
+  font-weight: 500;
+}
+
+.tagify__dropdown.users-list span {
+  grid-area: email;
+  width: 100%;
+  font-size: 0.875rem;
+  opacity: 0.6;
+}
+
+.tagify__dropdown.users-list .tagify__dropdown__item__addAll {
+  border-bottom: 1px solid #DDD;
+  gap: 0;
+}
+
+/* Tags items */
+.tagify__tag {
+  white-space: nowrap;
+}
+
+.tagify__tag:hover .tagify__tag__avatar-wrap {
+  transform: scale(1.6) translateX(-10%);
+}
+
+.tagify__tag .tagify__tag__avatar-wrap {
+  width: 16px;
+  height: 16px;
+  white-space: normal;
+  background: silver;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: 0.12s ease-out;
+}
+
+.tagify__tag img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.btn-close {
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.7em auto no-repeat;
+}
+
+.requirement:hover {
+  background-color: #EEEE;
+  cursor: pointer;
+  border-radius: 0.1rem;
+}
+
+.file-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.drag-active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.uploaded-file:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.document {
+  cursor: pointer;
+}
+
+.document:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: black;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vertical-divider {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#notifications::after {
+  font-size: 0;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.anywhere-wrap {
+  word-wrap: anywhere;
+}
+
+.react-calendar-heatmap text {
+  font-size: 0.4rem !important;
+  fill: black !important;
+}
+
+.color-github-5 {
+  fill: #0f3713 !important;
+}
+
+.color-github-6 {
+  fill: #071e0a !important;
+}
